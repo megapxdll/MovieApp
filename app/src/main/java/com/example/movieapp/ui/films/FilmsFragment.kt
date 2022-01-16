@@ -29,11 +29,6 @@ class FilmsFragment : Fragment() {
 
         _binding = FragmentFilmsBinding.inflate(inflater, container, false)
         val root: View = binding.root
-
-        val textView: TextView = binding.textReflow
-        filmsViewModel.text.observe(viewLifecycleOwner, Observer {
-            textView.text = it
-        })
         return root
     }
 
