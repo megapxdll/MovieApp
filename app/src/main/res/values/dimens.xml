@@ -6,4 +6,6 @@
     <dimen name="films_text_block_horizontal_gap">8dp</dimen>
     <dimen name="films_text_title_size">22sp</dimen>
     <dimen name="films_text_description_size">13sp</dimen>
+    <dimen name="content_name_size">25sp</dimen>
+    <dimen name="content_description_size">16</dimen>
 </resources>
