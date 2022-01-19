@@ -13,8 +13,8 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.movieapp.R
-import com.example.movieapp.databinding.FragmentTransformBinding
-import com.example.movieapp.databinding.ItemTransformBinding
+import com.example.movieapp.databinding.FragmentWishlistBinding
+import com.example.movieapp.databinding.ItemWishlistBinding
 
 /**
  * Fragment that demonstrates a responsive layout pattern where the format of the content
@@ -25,8 +25,7 @@ import com.example.movieapp.databinding.ItemTransformBinding
 class WishListFragment : Fragment() {
 
     private lateinit var wishListViewModel: WishListViewModel
-    private var _binding: FragmentTransformBinding? = null
-
+    private lateinit var _binding: FragmentWishlistBinding
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
@@ -37,7 +36,7 @@ class WishListFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         wishListViewModel = ViewModelProvider(this).get(WishListViewModel::class.java)
-        _binding = FragmentTransformBinding.inflate(inflater, container, false)
+        _binding = FragmentWishlistBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         val recyclerView = binding.recyclerviewWishlist
@@ -51,7 +50,7 @@ class WishListFragment : Fragment() {
 
     override fun onDestroyView() {
         super.onDestroyView()
-        _binding = null
+        //_binding = null
     }
 
     class FilmsAdapter :
@@ -84,7 +83,7 @@ class WishListFragment : Fragment() {
         )
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): WishListViewHolder {
-            val binding = ItemTransformBinding.inflate(LayoutInflater.from(parent.context))
+            val binding = ItemWishlistBinding.inflate(LayoutInflater.from(parent.context))
             return WishListViewHolder(binding)
         }
 
@@ -96,10 +95,10 @@ class WishListFragment : Fragment() {
         }
     }
 
-    class WishListViewHolder(binding: ItemTransformBinding) :
+    class WishListViewHolder(binding: ItemWishlistBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
-        val imageView: ImageView = binding.imageViewItemTransform
-        val textView: TextView = binding.textViewItemTransform
+        val imageView: ImageView = binding.imageViewItemWishlist
+        val textView: TextView = binding.textViewItemWishlist
     }
 }
