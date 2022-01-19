@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModel
 class FilmsViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is reflow Fragment"
+        value = "This is Films Fragment"
     }
     val text: LiveData<String> = _text
 }
