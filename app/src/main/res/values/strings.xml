@@ -12,4 +12,7 @@
     <string name="nav_header_desc">My Avatar</string>
     <string name="dunkan_crack_2">Dunkan Crack 2</string>
     <string name="someText">testText</string>
+
+    <string name="error">Ошибка!</string>
+    <string name="reload">Обновить</string>
 </resources>
