@@ -8,4 +8,5 @@
     <dimen name="films_text_description_size">13sp</dimen>
     <dimen name="content_name_size">25sp</dimen>
     <dimen name="content_description_size">16</dimen>
+    <dimen name="between_content_margin">20dp</dimen>
 </resources>
