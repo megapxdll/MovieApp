@@ -29,7 +29,7 @@ class FilmsFragment : Fragment() {
 
         _binding = FragmentFilmsBinding.inflate(inflater, container, false)
         val root: View = binding.root
-        return root
+        return root;
     }
 
     override fun onDestroyView() {

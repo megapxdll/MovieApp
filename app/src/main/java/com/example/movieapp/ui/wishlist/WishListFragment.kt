@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.movieapp.R
 import com.example.movieapp.databinding.FragmentWishlistBinding
 import com.example.movieapp.databinding.ItemWishlistBinding
+import com.example.movieapp.ui.itemPage.ItemPageViewModel
 
 /**
  * Fragment that demonstrates a responsive layout pattern where the format of the content
@@ -44,6 +45,10 @@ class WishListFragment : Fragment() {
         recyclerView.adapter = adapter
         wishListViewModel.texts.observe(viewLifecycleOwner, {
             adapter.submitList(it)
+        })
+
+        root.setOnClickListener(View.OnClickListener {
+            R.layout.fragment_itempage;
         })
         return root
     }

@@ -29,6 +29,15 @@ class ItemPageFragment : Fragment() {
         val root: View = binding.root
         return root
     }
+    companion object {
+        const val BUNDLE_EXTRA = "content"
+
+        fun newInstance(bundle: Bundle): ItemPageFragment {
+            val fragment = ItemPageFragment()
+            fragment.arguments = bundle
+            return fragment
+        }
+    }
 
     override fun onDestroyView() {
         super.onDestroyView()
