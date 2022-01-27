@@ -35,7 +35,6 @@ class MainFragment : Fragment() {
         with(binding) {
             mainFragmentFilmsRecyclerView.adapter = adapter
             viewModel.getLiveData().observe(viewLifecycleOwner, { renderData(it) })
-            viewModel.getWishListContent()
         }
     }
 

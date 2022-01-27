@@ -13,9 +13,6 @@ class MainViewModel(private val repository: Repository) : ViewModel() {
 
     fun getLiveData(): LiveData<AppState> = liveData
 
-    fun getFilmsContent() = getDataFromLocalSource(repository.getFilmsContentFromLocalStorage())
-    fun getWishListContent() = getDataFromLocalSource(repository.getWishListContentFromLocalStorage())
-    fun getSeriesContent() = getDataFromLocalSource(repository.getSeriesContentFromLocalStorage())
 
     private fun getDataFromLocalSource(contentType : List<Content>) {
         liveData.value = AppState.Loading
