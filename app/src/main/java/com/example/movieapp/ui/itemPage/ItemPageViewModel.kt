@@ -3,8 +3,12 @@ package com.example.movieapp.ui.itemPage
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
 import com.example.movieapp.model.AppState
 import com.example.movieapp.model.repositories.Repository
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 class ItemPageViewModel(private val repository: Repository) : ViewModel() {
     private val localLiveData: MutableLiveData<AppState> = MutableLiveData()
@@ -13,11 +17,12 @@ class ItemPageViewModel(private val repository: Repository) : ViewModel() {
         return localLiveData
     }
 
-    fun loadData() {
+    fun loadData() = with(viewModelScope) {
         localLiveData.value = AppState.Loading
-        Thread {
+
+        launch(Dispatchers.IO) {
             val data = repository.getGenresFromServer()
-            localLiveData.postValue(AppState.Success(listOf(data)))
-        }.start()
+            withContext(Dispatchers.Main) { localLiveData.value = AppState.Success(listOf(data)) }
+        }
     }
 }

@@ -73,30 +73,9 @@ class ThreadsFragment : Fragment(), CoroutineScope by MainScope() {
                     text = getString(R.string.in_main_thread)
                     textSize = resources.getDimension(R.dimen.main_container_text_size)
                 })
-                /*if (isActive) {
 
-                }*/
             }
-            //coroutine.cancel()
         }
-
-        /* val handlerThread = HandlerThread("my handler thread")
-         handlerThread.start()
-         val handler = Handler(handlerThread.looper)
-         handler.post {
-
-         }
-         handler.post {
-             //..
-             //..
-             //..
-         }
-         handlerThread.quit()
-         handlerThread.quitSafely()*/
-
-        /*handler.postDelayed({
-
-        }, 500)*/
 
         ForegroundService.start(requireContext())
     }
