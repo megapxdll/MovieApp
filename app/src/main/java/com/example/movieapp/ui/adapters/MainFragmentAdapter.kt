@@ -6,7 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.movieapp.databinding.FragmentItempageBinding
-import com.example.movieapp.databinding.FragmentWishlistBinding
 import com.example.movieapp.model.entities.Content
 import com.example.movieapp.ui.main.MainFragment
 
@@ -36,8 +35,8 @@ class MainFragmentAdapter(private val itemClickListener: MainFragment.OnItemView
 
     inner class MainViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         fun bind(content: Content) = with(binding) {
-            mainFragmentRecyclerItemTextView?.text = content.title
-            mainFragmentRecyclerItemTextViewDesc?.text = content.description
+            mainFragmentRecyclerItemTextView?.text = content.id.toString()
+            mainFragmentRecyclerItemTextViewDesc?.text = content.name
             root.setOnClickListener { itemClickListener.onItemViewClick(content) }
         }
     }

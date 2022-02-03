@@ -25,14 +25,10 @@ class ItemPageOpenedFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         arguments?.getParcelable<Content>(BUNDLE_EXTRA)?.let {
             with(binding) {
-                textViewItemTitle.text = it.title
-                textViewItemDesc.text = it.description
+                textViewItemTitle.text = it.id.toString()
+                textViewItemDesc.text = it.name
             }
-        } /*?: run {
-            //...
-            //...
-            //...
-        }*/
+        }
     }
 
     override fun onDestroyView() {
@@ -41,7 +37,7 @@ class ItemPageOpenedFragment : Fragment() {
     }
 
     companion object {
-        const val BUNDLE_EXTRA = "weather"
+        const val BUNDLE_EXTRA = "content"
 
         fun newInstance(bundle: Bundle): ItemPageOpenedFragment {
             val fragment = ItemPageOpenedFragment()

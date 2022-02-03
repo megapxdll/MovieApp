@@ -6,11 +6,12 @@ import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class Content(
-    val title: String,
-    val description: String
+    val id: Int,
+    val name: String
     //val icon: ImageView,
 ) : Parcelable
 
+/*
 fun getFilmContent() = listOf(
     Content("Scream", "Twenty-five years after a streak of brutal murders shocked the quiet town of Woodsboro, Calif., " +
             "a new killer dons the Ghostface mask and begins targeting a group of teenagers to resurrect secrets from the town's deadly past."),
@@ -52,3 +53,4 @@ fun getWishListContent() = listOf(
     Content("Teen Titans", "Drama, Fantasy, Crime"),
     Content("Dune", "Comedy, Drama")
 )
+*/
