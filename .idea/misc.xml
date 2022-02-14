@@ -19,7 +19,9 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/MovieApp/app/src/main/res/layout/activity_main.xml" value="0.2957427536231884" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MovieApp/app/src/main/res/layout/app_bar_main.xml" value="0.2957427536231884" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MovieApp/app/src/main/res/layout/content_main.xml" value="0.2957427536231884" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MovieApp/app/src/main/res/layout/fragment_content_provider.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MovieApp/app/src/main/res/layout/fragment_films.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MovieApp/app/src/main/res/layout/fragment_history.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MovieApp/app/src/main/res/layout/fragment_item_page_opened.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MovieApp/app/src/main/res/layout/fragment_itempage.xml" value="0.2957427536231884" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MovieApp/app/src/main/res/layout/fragment_itempage_opened.xml" value="0.36666666666666664" />
@@ -30,6 +32,7 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/MovieApp/app/src/main/res/layout/fragment_threads.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MovieApp/app/src/main/res/layout/fragment_transform.xml" value="0.2957427536231884" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MovieApp/app/src/main/res/layout/fragment_wishlist.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MovieApp/app/src/main/res/layout/item_history_list.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MovieApp/app/src/main/res/layout/item_transform.xml" value="0.2957427536231884" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MovieApp/app/src/main/res/layout/item_wishlist.xml" value="0.17831813576494426" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MovieApp/app/src/main/res/layout/main_fragment.xml" value="0.20520833333333333" />

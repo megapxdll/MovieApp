@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import com.example.movieapp.R
 import com.example.movieapp.model.entities.Content
 import com.example.movieapp.databinding.FragmentItemPageOpenedBinding
+import com.example.movieapp.ui.itemPage.ItemPageViewModel
 
 class ItemPageOpenedFragment : Fragment() {
     private var _binding: FragmentItemPageOpenedBinding? = null

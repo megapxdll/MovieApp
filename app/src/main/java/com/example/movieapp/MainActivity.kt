@@ -1,7 +1,9 @@
 package com.example.movieapp
 
 import android.os.Bundle
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
+import com.example.movieapp.ui.contacts.ContentProvider
 import com.example.movieapp.ui.main.MainFragment
 
 
@@ -19,6 +21,22 @@ class MainActivity : AppCompatActivity() {
         //setSupportActionBar(binding.appBarMain.toolbar)
         if (savedInstanceState == null) {
         supportFragmentManager.beginTransaction().replace(R.id.container, MainFragment.newInstance()).commitNow()
+        }
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+                R.id.menu_content_provider -> {
+                supportFragmentManager.apply {
+                    beginTransaction()
+                        .add(R.id.container, ContentProvider.newInstance())
+                        .addToBackStack("")
+                        .commitAllowingStateLoss()
+                }
+
+                true
+            }
+            else -> false
         }
     }
 

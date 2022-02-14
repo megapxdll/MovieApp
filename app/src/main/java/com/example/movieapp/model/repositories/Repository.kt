@@ -6,5 +6,6 @@ interface Repository {
 
     fun getGenresFromServer(): Content
 
+    fun getAllHistory(): List<Content>
 
 }
