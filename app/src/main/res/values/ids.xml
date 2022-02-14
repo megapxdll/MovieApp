@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="menu_map_mode_normal" type="id">Origin</item>
+    <item name="menu_map_mode_satellite" type="id">Satellite</item>
+    <item name="menu_map_mode_terrain" type="id">Terrain</item>
+    <item name="menu_map_traffic" type="id">Traffic</item>
+</resources>
