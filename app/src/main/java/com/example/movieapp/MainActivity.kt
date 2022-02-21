@@ -2,6 +2,7 @@ package com.example.movieapp
 
 import android.os.Bundle
 import android.view.MenuItem
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.movieapp.ui.contacts.ContentProvider
 import com.example.movieapp.ui.main.MainFragment
@@ -23,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         supportFragmentManager.beginTransaction().replace(R.id.container, MainFragment.newInstance()).commitNow()
         }
     }
+
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
